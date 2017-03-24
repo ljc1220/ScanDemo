@@ -1,0 +1,17 @@
+//
+//  PrefixHeader.pch
+//  Scan_demo
+//
+//  Created by liwei on 17/3/24.
+//  Copyright © 2017年 liwei. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+#endif

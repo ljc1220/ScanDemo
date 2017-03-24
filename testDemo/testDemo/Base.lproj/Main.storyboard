@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8QO-qk-Nr2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="gVc-Oz-aVr">
+            <objects>
+                <navigationController id="8QO-qk-Nr2" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ccO-tt-NKB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="mH5-lJ-jRV" kind="relationship" relationship="rootViewController" id="MyT-gx-0Vf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2BC-ex-bkj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-115057" y="-125"/>
+        </scene>
+        <!--扫码类型-->
+        <scene sceneID="lcr-bO-MSb">
+            <objects>
+                <viewController id="mH5-lJ-jRV" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Hk-05-ewb"/>
+                        <viewControllerLayoutGuide type="bottom" id="W2u-yq-mZu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0b7-4e-m48">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBI-nh-eh0">
+                                <rect key="frame" x="125" y="179" width="124" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="QQStyle"/>
+                                <connections>
+                                    <action selector="QQ:" destination="mH5-lJ-jRV" eventType="touchUpInside" id="hhM-Dq-sca"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NkQ-Nf-sPj">
+                                <rect key="frame" x="125" y="352" width="124" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="AlipayStyle"/>
+                                <connections>
+                                    <action selector="Alipay:" destination="mH5-lJ-jRV" eventType="touchUpInside" id="zu5-Q4-Atn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTm-K6-SpE">
+                                <rect key="frame" x="125" y="537" width="124" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="WeChatStyle"/>
+                                <connections>
+                                    <action selector="Wechat:" destination="mH5-lJ-jRV" eventType="touchUpInside" id="Qr6-Vi-zJi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="扫码类型" id="3dh-Ai-w7Y"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1hs-9b-ovE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-114327" y="-132"/>
+        </scene>
+    </scenes>
+</document>
